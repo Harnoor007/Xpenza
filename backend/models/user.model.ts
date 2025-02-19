@@ -21,6 +21,9 @@ const userSchema = new mongoose.Schema(
       unique: true,
       sparse: true,
     },
+    googleRefreshToken: { 
+      type: String 
+    }
   },
   { timestamps: true }
 );
